@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Ebbie's Fashion House</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Existing meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Ebbie's Fashion House - Kimberley's Premier Fashion Destination">
+    <meta property="og:description" content="Discover the latest fashion trends at Ebbie's Fashion House in Kimberley. Quality clothing for men, women, and children with custom tailoring services.">
+    <meta property="og:image" content="https://www.ebbiesfashion.co.za/images/og-image.jpg">
+    <meta property="og:url" content="https://www.ebbiesfashion.co.za">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ebbie's Fashion House">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ebbie's Fashion House - Kimberley's Premier Fashion Destination">
+    <meta name="twitter:description" content="Discover the latest fashion trends at Ebbie's Fashion House in Kimberley.">
+    <meta name="twitter:image" content="https://www.ebbiesfashion.co.za/images/og-image.jpg">
+    
+    <!-- Existing title and description -->
+    <title>Ebbie's Fashion House - Latest Fashion Trends in Kimberley</title>
+    <meta name="description" content="Discover the latest fashion trends at Ebbie's Fashion House in Kimberley, South Africa. Quality clothing for men, women, and children.">
+    
+    <!-- Rest of your head content -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Ebbie's Fashion House</div>
+                <nav>
+    
+                    
+                </nav>
+    <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>     
+       
+    </header>
+    
+    <main class="page-content">
+        <div class="container">
+            <h1 class="section-title">Product Enquiry</h1>
+            <p>Interested in our products or services? Fill out the form below and we'll get back to you with pricing and availability information.</p>
+            
+            <form id="enquiryForm">
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+        Thank you for your enquiry! We'll get back to you with pricing and availability within 24 hours.
+    </div>
+    
+    <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required minlength="2">
+        <small>Name must be at least 2 characters long</small>
+        <div class="char-counter" id="nameCounter"></div>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+        <small>Please enter a valid email address</small>
+    </div>
+    
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9+\-\s()]{10,}">
+        <small>Please enter a valid phone number (at least 10 digits)</small>
+    </div>
+    
+    <div class="form-group">
+        <label for="product">Product/Service of Interest *</label>
+        <select id="product" name="product" required>
+            <option value="">Select a product/service</option>
+            <option value="womens">Women's Collection</option>
+            <option value="mens">Men's Collection</option>
+            <option value="kids">Kids Collection</option>
+            <option value="accessories">Accessories</option>
+            <option value="seasonal">Seasonal Collection</option>
+            <option value="tailoring">Custom Tailoring</option>
+        </select>
+        <small>Please select a product/service</small>
+    </div>
+    
+    <div class="form-group">
+        <label for="budget">Budget Range</label>
+        <select id="budget" name="budget">
+            <option value="">Select budget range</option>
+            <option value="under-500">Under R500</option>
+            <option value="500-1000">R500 - R1000</option>
+            <option value="1000-2000">R1000 - R2000</option>
+            <option value="over-2000">Over R2000</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="urgency">How soon do you need this?</label>
+        <select id="urgency" name="urgency">
+            <option value="">Select urgency</option>
+            <option value="urgent">Within 1 week</option>
+            <option value="soon">Within 2 weeks</option>
+            <option value="flexible">Flexible timing</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="message">Enquiry Details *</label>
+        <textarea id="message" name="message" rows="5" 
+                 placeholder="Please provide specific details about what you're looking for..." 
+                 required minlength="10" maxlength="500"></textarea>
+        <small>Message must be between 10-500 characters</small>
+        <div class="char-counter" id="messageCounter">0/500</div>
+    </div>
+    
+    <button type="submit" class="btn" id="submitBtn">Submit Enquiry</button>
+</form>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Ebbie's Fashion House. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+                <p>Based in Kimberley, South Africa</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

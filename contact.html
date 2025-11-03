@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ebbie's Fashion House</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Existing meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Ebbie's Fashion House - Kimberley's Premier Fashion Destination">
+    <meta property="og:description" content="Discover the latest fashion trends at Ebbie's Fashion House in Kimberley. Quality clothing for men, women, and children with custom tailoring services.">
+    <meta property="og:image" content="https://www.ebbiesfashion.co.za/images/og-image.jpg">
+    <meta property="og:url" content="https://www.ebbiesfashion.co.za">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ebbie's Fashion House">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ebbie's Fashion House - Kimberley's Premier Fashion Destination">
+    <meta name="twitter:description" content="Discover the latest fashion trends at Ebbie's Fashion House in Kimberley.">
+    <meta name="twitter:image" content="https://www.ebbiesfashion.co.za/images/og-image.jpg">
+    
+    <!-- Existing title and description -->
+    <title>Ebbie's Fashion House - Latest Fashion Trends in Kimberley</title>
+    <meta name="description" content="Discover the latest fashion trends at Ebbie's Fashion House in Kimberley, South Africa. Quality clothing for men, women, and children.">
+    
+    <!-- Rest of your head content -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Ebbie's Fashion House</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main class="page-content">
+        <div class="container">
+            <h1 class="section-title">Contact Us</h1>
+            
+            <div class="contact-section">
+                <h2>Our Locations</h2>
+                <p><strong>Main Store:</strong> 123 Fashion Street, Kimberley City Centre, Kimberley, 8301</p>
+                <p><strong>Branch Store:</strong> 456 Style Avenue, Flamingo Vibe, Kimberley, 8301</p>
+                
+                <div class="map-placeholder">
+                    Google Maps Integration - Kimberley Locations
+                </div>
+            </div>
+            
+            <div class="contact-section">
+    <h2>Get In Touch</h2>
+    
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+        Thank you for your message! We'll get back to you within 24 hours.
+    </div>
+    
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="contactName">Full Name *</label>
+            <input type="text" id="contactName" name="contactName" required minlength="2">
+            <small>Name must be at least 2 characters long</small>
+            <div class="char-counter" id="nameCounter"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="contactEmail">Email Address *</label>
+            <input type="email" id="contactEmail" name="contactEmail" required>
+            <small>Please enter a valid email address</small>
+        </div>
+        
+        <div class="form-group">
+            <label for="contactPhone">Phone Number</label>
+            <input type="tel" id="contactPhone" name="contactPhone" pattern="[0-9+\-\s()]{10,}">
+            <small>Please enter a valid phone number (at least 10 digits)</small>
+        </div>
+        
+        <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="complaint">Complaint</option>
+                <option value="feedback">Feedback</option>
+                <option value="partnership">Partnership Opportunity</option>
+                <option value="other">Other</option>
+            </select>
+            <small>Please select a subject</small>
+        </div>
+        
+        <div class="form-group">
+            <label for="contactMessage">Message *</label>
+            <textarea id="contactMessage" name="contactMessage" rows="5" 
+                     placeholder="How can we help you?" required minlength="10" maxlength="500"></textarea>
+            <small>Message must be between 10-500 characters</small>
+            <div class="char-counter" id="messageCounter">0/500</div>
+        </div>
+        
+        <button type="submit" class="btn" id="submitBtn">Send Message</button>
+    </form>
+</div>
+            
+            
+            <div class="contact-section">
+                <h2>Contact Information</h2>
+                <p><strong>Phone:</strong> +27 53 123 4567</p>
+                <p><strong>Email:</strong> info@ebbiesfashion.co.za</p>
+                <p><strong>Business Hours:</strong></p>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 4:00 PM</p>
+                <p>Sunday: 10:00 AM - 2:00 PM</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Ebbie's Fashion House. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+                <p>Based in Kimberley, South Africa</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
